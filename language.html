@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" x-data>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Korean Language Courses - Study in South Korea</title>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+<!-- Navigation -->
+<nav class="bg-gray-900" x-data="{ open: false }">
+<div class="container mx-auto px-4 py-4 flex items-center justify-between">
+<a href="index.html" class="text-white text-2xl font-bold">Study in Korea</a>
+<div class="hidden md:flex space-x-6">
+<a href="degree.html" class="text-gray-300 hover:text-white">Degree Programs</a>
+<a href="language.html" class="text-white hover:text-gray-300">Korean Language</a>
+<a href="contact.html" class="text-gray-300 hover:text-white">Contact Us</a>
+</div>
+<button @click="open = !open" class="md:hidden text-gray-300 focus:outline-none">
+<svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+<template x-if="!open">
+<path fill-rule="evenodd" d="M4 5h16v2H4zm0 6h16v2H4zm0 6h16v2H4z"></path>
+</template>
+<template x-if="open">
+<path fill-rule="evenodd" d="M6 18L18 6M6 6l12 12"></path>
+</template>
+</svg>
+</button>
+</div>
+<div x-show="open" class="md:hidden bg-gray-800">
+<div class="px-4 py-2 space-y-2">
+<a href="degree.html" class="block text-gray-300 hover:text-white">Degree Programs</a>
+<a href="language.html" class="block text-gray-300 hover:text-white">Korean Language</a>
+<a href="contact.html" class="block text-gray-300 hover:text-white">Contact Us</a>
+</div>
+</div>
+</nav>
+
+<!-- Header -->
+<header class="bg-blue-600 py-12">
+<div class="container mx-auto px-4 text-center">
+<h1 class="text-4xl font-bold text-white">Korean Language Courses</h1>
+<p class="text-white mt-4">Explore specialized Korean language programs at top institutions</p>
+</div>
+</header>
+
+<!-- Language Courses Cards -->
+<main class="py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card: Yonsei University KLI -->
+<div class="bg-white rounded-lg shadow-lg p-6">
+<h2 class="text-2xl font-bold mb-2">Yonsei University KLI</h2>
+<p class="mb-2"><strong>Location:</strong> Seoul</p>
+<p class="mb-2"><strong>Program Highlights:</strong> Courses for all levels with recognized certification</p>
+<p class="mb-2"><strong>Financials:</strong><br> Tuition: 275,000–385,000 BDT/year<br> Living: 66,000–88,000 BDT/month<br> Admission Fee: 4,230–8,460 BDT</p>
+<p class="mb-2"><strong>Scholarships & Support:</strong> Occasional university & government scholarships; cultural exchange programs</p>
+<p class="mb-2"><strong>Pros:</strong> Renowned instruction, flexible study options, strong cultural immersion</p>
+</div>
+<!-- Card: Sogang University KLEC -->
+<div class="bg-white rounded-lg shadow-lg p-6">
+<h2 class="text-2xl font-bold mb-2">Sogang University KLEC</h2>
+<p class="mb-2"><strong>Location:</strong> Seoul</p>
+<p class="mb-2"><strong>Program Highlights:</strong> Intensive courses with flexible scheduling</p>
+<p class="mb-2"><strong>Financials:</strong><br> Tuition: 220,000–330,000 BDT/year<br> Living: 66,000–88,000 BDT/month<br> Admission Fee: 4,230–8,460 BDT</p>
+<p class="mb-2"><strong>Scholarships & Support:</strong> Merit-based awards; government exchange initiatives</p>
+<p class="mb-2"><strong>Pros:</strong> Practical language skills, cultural immersion, networking opportunities</p>
+</div>
+<!-- Card: HUFS Korean Language Program -->
+<div class="bg-white rounded-lg shadow-lg p-6">
+<h2 class="text-2xl font-bold mb-2">HUFS Korean Language Program</h2>
+<p class="mb-2"><strong>Location:</strong> Seoul (and other campuses)</p>
+<p class="mb-2"><strong>Program Highlights:</strong> Tailored courses with extensive support services</p>
+<p class="mb-2"><strong>Financials:</strong><br> Tuition: 220,000–330,000 BDT/year<br> Living: 66,000–88,000 BDT/month<br> Admission Fee: 4,230–8,460 BDT</p>
+<p class="mb-2"><strong>Scholarships & Support:</strong> HUFS & government scholarships; bridging programs</p>
+<p class="mb-2"><strong>Pros:</strong> Global focus, strong alumni network, comprehensive support</p>
+</div>
+<!-- Card: Chung-Ang University KLI -->
+<div class="bg-white rounded-lg shadow-lg p-6">
+<h2 class="text-2xl font-bold mb-2">Chung-Ang University KLI</h2>
+<p class="mb-2"><strong>Location:</strong> Seoul</p>
+<p class="mb-2"><strong>Program Highlights:</strong> Comprehensive courses with cultural workshops</p>
+<p class="mb-2"><strong>Financials:</strong><br> Tuition: 220,000–330,000 BDT/year<br> Living: 66,000–88,000 BDT/month<br> Admission Fee: 4,230–8,460 BDT</p>
+<p class="mb-2"><strong>Scholarships & Support:</strong> International office & government grants</p>
+<p class="mb-2"><strong>Pros:</strong> Flexible durations, supportive environment, recognized certificates</p>
+</div>
+</div>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 py-4">
+<div class="container mx-auto text-center text-gray-300">
+<p>&copy; 2025 Study in South Korea. All Rights Reserved.</p>
+</div>
+</footer>
+</body>
+</html>

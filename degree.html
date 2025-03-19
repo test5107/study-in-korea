@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" x-data>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Degree Programs - Study in South Korea</title>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+<!-- Navigation -->
+<nav class="bg-gray-900" x-data="{ open: false }">
+<div class="container mx-auto px-4 py-4 flex items-center justify-between">
+<a href="index.html" class="text-white text-2xl font-bold">Study in Korea</a>
+<div class="hidden md:flex space-x-6">
+<a href="degree.html" class="text-white hover:text-gray-300">Degree Programs</a>
+<a href="language.html" class="text-gray-300 hover:text-white">Korean Language</a>
+<a href="contact.html" class="text-gray-300 hover:text-white">Contact Us</a>
+</div>
+<button @click="open = !open" class="md:hidden text-gray-300 focus:outline-none">
+<svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+<template x-if="!open">
+<path fill-rule="evenodd" d="M4 5h16v2H4zm0 6h16v2H4zm0 6h16v2H4z"></path>
+</template>
+<template x-if="open">
+<path fill-rule="evenodd" d="M6 18L18 6M6 6l12 12"></path>
+</template>
+</svg>
+</button>
+</div>
+<div x-show="open" class="md:hidden bg-gray-800">
+<div class="px-4 py-2 space-y-2">
+<a href="degree.html" class="block text-gray-300 hover:text-white">Degree Programs</a>
+<a href="language.html" class="block text-gray-300 hover:text-white">Korean Language</a>
+<a href="contact.html" class="block text-gray-300 hover:text-white">Contact Us</a>
+</div>
+</div>
+</nav>
+
+<!-- Header -->
+<header class="bg-blue-600 py-12">
+<div class="container mx-auto px-4 text-center">
+<h1 class="text-4xl font-bold text-white">Degree Programs</h1>
+<p class="text-white mt-4">Explore our recommended degree programs at private universities in South Korea</p>
+</div>
+</header>
+
+<!-- University Cards -->
+<main class="py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card: Sun Moon University -->
+<div class="bg-white rounded-lg shadow-lg p-6">
+<h2 class="text-2xl font-bold mb-2">Sun Moon University (SMU)</h2>
+<p class="mb-2"><strong>Location:</strong> Asan, South Chungcheong Province</p>
+<p class="mb-2"><strong>Key Departments:</strong> STEM: Computer Science, IT, Engineering<br> Non-STEM: Business, International Relations, Media, Hospitality, Liberal Arts</p>
+<p class="mb-2"><strong>Financials:</strong><br> Tuition: 330,000–660,000 BDT/year<br> Living: 44,000–66,000 BDT/month<br> Admission Fee: 4,230–8,460 BDT</p>
+<p class="mb-2"><strong>Scholarships:</strong> Merit-based (up to 100% waiver), Partial (30–50% off)</p>
+<p class="mb-2"><strong>Support:</strong> Government cultural exchange & part-time work (20 hrs/week)</p>
+</div>
+<!-- Card: Dongseo University -->
+<div class="bg-white rounded-lg shadow-lg p-6">
+<h2 class="text-2xl font-bold mb-2">Dongseo University (DSU)</h2>
+<p class="mb-2"><strong>Location:</strong> Busan</p>
+<p class="mb-2"><strong>Key Departments:</strong> STEM: Computer Engineering, Digital IT, Electronics<br> Non-STEM: Business, Film & Media, Arts & Design, International Studies</p>
+<p class="mb-2"><strong>Financials:</strong><br> Tuition: 440,000–770,000 BDT/year<br> Living: 55,000–88,000 BDT/month<br> Admission Fee: 4,230–8,460 BDT</p>
+<p class="mb-2"><strong>Scholarships:</strong> Partial to near-full tuition awards</p>
+<p class="mb-2"><strong>Support:</strong> Part-time work & government initiatives</p>
+</div>
+<!-- Card: Woosong University -->
+<div class="bg-white rounded-lg shadow-lg p-6">
+<h2 class="text-2xl font-bold mb-2">Woosong University</h2>
+<p class="mb-2"><strong>Location:</strong> Daejeon Area</p>
+<p class="mb-2"><strong>Key Departments:</strong> STEM: Engineering, Computer Science, IT<br> Non-STEM: Business, Arts & Design, Tourism, International Studies</p>
+<p class="mb-2"><strong>Financials:</strong><br> Tuition: 330,000–715,000 BDT/year<br> Living: 44,000–77,000 BDT/month<br> Admission Fee: 4,230–12,690 BDT</p>
+<p class="mb-2"><strong>Scholarships:</strong> Merit/Need-based (up to full tuition waiver)</p>
+<p class="mb-2"><strong>Support:</strong> International community with English programs</p>
+</div>
+<!-- Card: Howon University -->
+<div class="bg-white rounded-lg shadow-lg p-6">
+<h2 class="text-2xl font-bold mb-2">Howon University</h2>
+<p class="mb-2"><strong>Location:</strong> Gunsan, North Jeolla Province</p>
+<p class="mb-2"><strong>Key Departments:</strong> STEM: Engineering, IT, Computer Science<br> Non-STEM: Business, Design, Humanities</p>
+<p class="mb-2"><strong>Financials:</strong><br> Tuition: 275,000–550,000 BDT/year<br> Living: 44,000–66,000 BDT/month<br> Admission Fee: 4,230–8,460 BDT</p>
+<p class="mb-2"><strong>Scholarships:</strong> Tuition reductions of 30–70%</p>
+<p class="mb-2"><strong>Support:</strong> Personalized campus & part-time work</p>
+</div>
+<!-- Card: Jeonju University -->
+<div class="bg-white rounded-lg shadow-lg p-6">
+<h2 class="text-2xl font-bold mb-2">Jeonju University</h2>
+<p class="mb-2"><strong>Location:</strong> Jeonju, Jeollabuk-do</p>
+<p class="mb-2"><strong>Key Departments:</strong> STEM (Selected): Computer Science, Electronics<br> Non-STEM: Arts & Design, Business, Tourism, Media, Culture & Humanities</p>
+<p class="mb-2"><strong>Financials:</strong><br> Tuition: 275,000–605,000 BDT/year<br> Living: 44,000–66,000 BDT/month<br> Admission Fee: 4,230–8,460 BDT</p>
+<p class="mb-2"><strong>Scholarships:</strong> Partial waivers (20–50% off)</p>
+<p class="mb-2"><strong>Support:</strong> Community-focused with government integration programs</p>
+</div>
+<!-- Card: Konyang University -->
+<div class="bg-white rounded-lg shadow-lg p-6">
+<h2 class="text-2xl font-bold mb-2">Konyang University</h2>
+<p class="mb-2"><strong>Location:</strong> Nonsan Region</p>
+<p class="mb-2"><strong>Key Departments:</strong> STEM: Engineering, Computer Science, IT<br> Non-STEM: Business, Liberal Arts, Health Sciences</p>
+<p class="mb-2"><strong>Financials:</strong><br> Tuition: 330,000–660,000 BDT/year<br> Living: 44,000–66,000 BDT/month<br> Admission Fee: 4,230–12,690 BDT</p>
+<p class="mb-2"><strong>Scholarships:</strong> Merit-based covering 30–70%</p>
+<p class="mb-2"><strong>Support:</strong> Government-supported cultural programs & part-time work</p>
+</div>
+</div>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 py-4">
+<div class="container mx-auto text-center text-gray-300">
+<p>&copy; 2025 Study in South Korea. All Rights Reserved.</p>
+</div>
+</footer>
+</body>
+</html>

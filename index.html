@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" x-data>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Study in South Korea - Home</title>
+<!-- Alpine.js for reactivity -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
+<!-- Tailwind CSS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+<!-- Navigation -->
+<nav class="bg-gray-900" x-data="{ open: false }">
+<div class="container mx-auto px-4 py-4 flex items-center justify-between">
+<a href="index.html" class="text-white text-2xl font-bold">Study in Korea</a>
+<div class="hidden md:flex space-x-6">
+<a href="degree.html" class="text-gray-300 hover:text-white">Degree Programs</a>
+<a href="language.html" class="text-gray-300 hover:text-white">Korean Language</a>
+<a href="contact.html" class="text-gray-300 hover:text-white">Contact Us</a>
+</div>
+<button @click="open = !open" class="md:hidden text-gray-300 focus:outline-none">
+<svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+<template x-if="!open">
+<path fill-rule="evenodd" d="M4 5h16v2H4zm0 6h16v2H4zm0 6h16v2H4z"></path>
+</template>
+<template x-if="open">
+<path fill-rule="evenodd" d="M6 18L18 6M6 6l12 12"></path>
+</template>
+</svg>
+</button>
+</div>
+<div x-show="open" class="md:hidden bg-gray-800">
+<div class="px-4 py-2 space-y-2">
+<a href="degree.html" class="block text-gray-300 hover:text-white">Degree Programs</a>
+<a href="language.html" class="block text-gray-300 hover:text-white">Korean Language</a>
+<a href="contact.html" class="block text-gray-300 hover:text-white">Contact Us</a>
+</div>
+</div>
+</nav>
+
+<!-- Header Section -->
+<header class="bg-cover bg-center h-screen" style="background-image: url('https://source.unsplash.com/1600x900/?korea,university');">
+<div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+<div class="text-center">
+<h1 class="text-4xl md:text-6xl text-white font-bold mb-4">Your Gateway to South Korea</h1>
+<p class="text-lg md:text-2xl text-gray-200 mb-6">Hassle-free admissions, affordable costs, and government support for Bangladeshi students</p>
+<a href="degree.html" class="bg-blue-600 text-white py-3 px-6 rounded-full hover:bg-blue-700 transition">Explore Degree Programs</a>
+</div>
+</div>
+</header>
+
+<!-- Main Content Section -->
+<main class="py-12">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-8">Welcome</h2>
+<p class="text-center text-lg mb-8">We help Bangladeshi students gain easy admission to South Korean universities. Whether you're interested in full degree programs or Korean language courses, we provide all the information you need to get started.</p>
+<div class="flex justify-center">
+<a href="contact.html" class="bg-gray-900 text-white py-3 px-6 rounded-full hover:bg-gray-800 transition">Get in Touch</a>
+</div>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 py-4">
+<div class="container mx-auto text-center text-gray-300">
+<p>&copy; 2025 Study in South Korea. All Rights Reserved.</p>
+</div>
+</footer>
+</body>
+</html>
